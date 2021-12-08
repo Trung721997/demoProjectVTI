@@ -1,0 +1,256 @@
+.table-wrapper {
+    width: 1000px;
+    margin: 100px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.table-title {
+    margin-left: 150px;
+}
+
+.table-title h2 {
+    /* margin: 6px 0 0; */
+    width: 660px;
+    margin: 0px;
+    font-size: 2.7rem;
+    text-align: center;
+}
+
+.table-title .add-new {
+    float: right;
+    height: 30px;
+    font-weight: bold;
+    font-size: 12px;
+    text-shadow: none;
+    min-width: 100px;
+    /* border-radius: 50px; */
+    line-height: 13px;
+}
+
+.table-title .add-new i {
+    margin-right: 4px;
+}
+
+table.table {
+    table-layout: fixed;
+}
+
+table.table tr th,
+table.table tr td {
+    border-color: #e9e9e9;
+}
+
+table.table th i {
+    font-size: 13px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+table.table th:last-child {
+    width: 100px;
+}
+
+table.table td a {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 5px;
+    min-width: 24px;
+}
+
+.col-sm-4 {
+    position: absolute;
+    margin-top: 10px;
+    width: 690px;
+}
+
+.btn-add {
+    position: absolute;
+    margin-left: 50px;
+}
+
+.btn-delete {
+    position: absolute;
+    margin-left: 520px;
+}
+
+table.table td a.add {
+    color: #27C46B;
+}
+
+table.table td a.edit {
+    color: #FFC107;
+}
+
+table.table td a.delete {
+    color: #E34724;
+}
+
+table.table td i {
+    font-size: 19px;
+}
+
+table.table td a.add i {
+    font-size: 24px;
+    margin-right: -1px;
+    position: relative;
+    top: 3px;
+}
+
+table.table .form-control {
+    height: 32px;
+    line-height: 32px;
+    box-shadow: none;
+    border-radius: 2px;
+}
+
+table.table .form-control.error {
+    border-color: #f50000;
+}
+
+table.table td .add {
+    display: none;
+}
+
+table.table-bordered {
+    margin-top: 20px;
+}
+
+#myInput {
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+.search-contairner {
+    display: flex;
+    margin-top: 5px;
+    padding-left: 15px;
+}
+
+.search-contairner-item {
+    padding-top: 0;
+    width: 60px;
+    height: 30px;
+    border: 0px;
+    box-shadow: rgb(172, 172, 172) 0px 50px 100px -20px, rgba(172, 172, 172) 0px 30px 60px -30px, rgba(172, 172, 172) 0px -2px 6px 0px inset;
+}
+
+.search-contairner-item:hover {
+    background-color: rgba(91 192 222);
+}
+
+.search-input {
+    padding-bottom: 10px;
+    width: 510px;
+    height: 30px;
+}
+
+.row {
+    padding-bottom: 0;
+}
+
+.search-contairner-button {
+    padding-left: 12px;
+}
+
+.search-contairnerinner {
+    display: flex;
+    padding-left: 16px;
+}
+
+.min-max-date {
+    margin-top: 55px;
+    padding-left: 13.95px;
+    display: inline-flex;
+}
+
+.maxdate {
+    margin-left: 228px;
+}
+
+#minCreateDate,
+#maxCreateDate {
+    cursor: text;
+}
+
+.checkbox-der {
+    width: 30px;
+}
+
+.checkbox-der-item {
+    cursor: pointer;
+}
+
+.page-item {
+    cursor: pointer;
+}
+
+.table-name,
+.table-author {
+    text-align: center;
+}
+
+.table-cretarDate {
+    width: 130px;
+    text-align: center;
+}
+
+.table-actions {
+    width: 90px;
+    text-align: center;
+}
+
+.page-pagination {
+    text-align: center;
+}
+
+
+/* ---ADD and Update----------------------------------- */
+
+.modal-header {
+    display: inline-flex;
+}
+
+.modal-title {
+    width: 200px;
+    font-size: 2rem;
+    margin-top: 15px;
+    margin-left: 200px;
+}
+
+.close {
+    margin-left: 100px;
+    font-size: 3rem;
+}
+
+.modal-content {
+    /* width: 800px; */
+    margin-top: 220px;
+    margin-left: 50px;
+}
+
+#name,
+#author {
+    width: 480px;
+    box-shadow: rgb(172, 172, 172) 0px 50px 100px -20px, rgba(172, 172, 172) 0px 30px 60px -30px, rgba(172, 172, 172) 0px -2px 6px 0px inset;
+}
+
+#createdDate {
+    box-shadow: rgb(212, 212, 212) 0px 50px 100px -20px, rgba(231, 231, 231) 0px 30px 60px -30px, rgba(231, 231, 231) 0px -2px 6px 0px inset;
+}
+
+.modal-container-text-color,
+#author,
+#createdDate {
+    color: rgb(161, 161, 161);
+}
+
+.modal-footer {
+    margin-right: 22px;
+}

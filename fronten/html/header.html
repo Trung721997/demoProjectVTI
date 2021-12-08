@@ -1,0 +1,76 @@
+<div class="tieuDe">
+    <div class="taoTaiKhoan">
+        <ul class="list__tacVu">
+            <span class="list__tacVu-item1">
+                    <li class="tacVu-item1">
+                        <span class="tacVu-item-ketNoi">Connection</span>
+            <a href="https://www.facebook.com/97Northside" class="tacVu-item-icon-link">
+                <i class="tacVu-item-icon fab fa-facebook-square"></i>
+            </a>
+            <a href="https://www.instagram.com/97northside/" class="tacVu-item-icon-link">
+                <i class="tacVu-item-icon fab fa-instagram"></i>
+            </a>
+            </li>
+            </span>
+
+            <span class="list__tacVu-item2">
+                    <li class="tacVu-item2 tacVu-item-dangNhap">
+                        <a style="text-decoration: none;" class="navbar-name-item" onclick="loginHeader()">Login</a>
+                    </li>
+                    <li class="tacVu-item2 tacVu-item-logout">
+                         <a style="text-decoration: none;" class="navbar-name-item" onclick="logout()">Logout</a>
+                    </li>
+                    <li class="tacVu-item2 tacVu-item-dangKy">Register</li>
+                    </span>
+        </ul>
+    </div>
+
+    <div class="timkiem">
+        <div class="logo" onclick="clickNavlogoIcon()">
+            <img class="logo-icon" src=" ../img/logo.png " alt=" Logo ">
+        </div>
+        <div class="menu ">
+            <ul class="menu__chucNang ">
+                <li class="chucNang chucNang1 ">
+                    <a class="chucNang-item " onclick="clickNavHome()">Home</a>
+                </li>
+
+                <li class="chucNang chucNang2 ">
+                    <a class="chucNang-item " onclick="clickNavViewListDepartments()">View List Department</a>
+                </li>
+
+                <li class="chucNang chucNang2 ">
+                    <a class="chucNang-item " onclick="clickNavViewListAccounts()">View List Account</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="thanhTiemKiem-search">
+            <button type="button" class="thanhTiemKiem-bnt-search" data-toggle="modal">Search</button>
+        </div>
+        <div class="thanhTiemKiem">
+            <input type="text" id="input-search-department1" class="thanhTiemKiem-input" placeholder="Search">
+
+            <i class="thanhTiemKiem-icon fas fa-search "></i>
+            <div class="thanhTiemKiem-lichSu ">
+                <div class="thanhTiemKiem-lichSu-tieuDe ">
+                    <h3 class="thanhTiemKiem-lichSu-tieuDe-item ">Lịch sử tìm kiếm</h3>
+                </div>
+                <ul class="thanhTiemKiem-lichSu-danhSach ">
+                    <li class="thanhTiemKiem-lichSu-danhSach-item ">
+                        <a class="thanhTiemKiem-lichSu-danhSach-item-link " href=" ">T-shirt brithday</a>
+                    </li>
+                    <li class="thanhTiemKiem-lichSu-danhSach-item ">
+                        <a class="thanhTiemKiem-lichSu-danhSach-item-link " href=" ">T-shirt daddy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="hoSoTaiKhoan ">
+            <i class="hoSoTaiKhoan-icon far fa-user-circle"></i>
+        </div>
+        <div id="fullNam-login">
+        </div>
+
+    </div>
+</div>

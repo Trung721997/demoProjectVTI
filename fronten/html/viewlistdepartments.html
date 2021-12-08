@@ -1,0 +1,99 @@
+<div class="container">
+    <div class="table-wrapper">
+        <div class="table-title">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>Department <b>View List</b></h2>
+                </div>
+                <div class="col-sm-4">
+                    <button type="button" class="btn btn-info add-new btn-add " data-toggle="modal" onclick="openAddModal()"><i class="fa fa-plus"></i> Add New</button>
+                    <button type="button" class="btn btn-info add-new btn-delete " data-toggle="modal" onclick="deleteAllDepartment()"><i class="fa fa-plus"></i>Delete All</button>
+
+                </div>
+
+                <div class="min-max-date">
+                    <p class="mindate">
+                        Min Date: <input type="date" id="minCreateDate" name="minCreateDate" onchange="changeMinCreateDate(event);" /></br>
+                    </p>
+                    <p class="maxdate">
+                        Max Date: <input type="date" id="maxCreateDate" name="maxCreateDate" onchange="changeMaxCreateDate(event);"></br>
+                    </p>
+                </div>
+
+                <div class="search-contairner">
+                    <input class="search-contairner-item  search-input" type="text" onkeyup="handKeyUpEventForSearching(event)" id="input-search-department" placeholder="Search for department name or author..." title="Type in a name">
+                    <div class="search-contairnerinner">
+                        <button class="search-contairner-item" type="button" onclick="handleSearch()">Search</button>
+                    </div>
+                    <div class="search-contairner-button">
+                        <button class="search-contairner-item  item-refresh" type="button" onclick="refreshTable()">Refresh</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th class="checkbox-der"><input class="checkbox-der-item" type="checkbox" id="checkbox-all" name="checkbox-all" onclick="onChangeCheckboxAll()"></th>
+                    <th class="table-name">Name <i class="fa fa-fw" id="heading-name" onclick="changeSort('name')"></i></th>
+                    <th class="table-author">Author <i class="fa fa-fw" id="heading-author" onclick="changeSort('author.fullName')"></i></th>
+                    <th class="table-cretarDate">Create Date <i class="fa fa-fw" id="heading-createDate" onclick="changeSort('createDate')"></i></th>
+                    <th class="table-actions">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <nav class="page-pagination" aria-label="Page navigation example">
+            <ul class="pagination" id="pagination">
+            </ul>
+        </nav>
+
+    </div>
+
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- header -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleModal">Add Department</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- body -->
+                <div class="modal-body">
+                    <div class="modal-container">
+
+                        <input type="hidden" id="id" name="id">
+
+                        <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Enter Name" name="name" id="name" required>
+                        <p style="color: red;" id="errorMessage"></p>
+
+                        <label for="author" id="authorLabel"><b class="modal-container-text-color">Author</b></label>
+                        <input type="text" name="author" id="author" disabled>
+
+                        <label for="createdDate" id="createdDateLabel"><b class="modal-container-text-color">Create Date</b></label>
+                        <input type="date" name="createdDate" id="createdDate" disabled>
+                    </div>
+                </div>
+
+                <!-- footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="save()">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- success alert -->
+    <div class="alert alert-success" id="success-alert" style="display: none;">
+        <button type="button" class="close" data-dismiss="alert">x</button>
+        <strong>Success! </strong>
+    </div>
+</div>
